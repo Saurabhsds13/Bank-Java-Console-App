@@ -105,7 +105,11 @@ public class BankingApp {
 				String balanceAcc = scanner.nextLine();
 				System.out.println("Current Balance: " + bankService.checkBalance(balanceAcc));
 				break;
+
 			case 5:
+				bankService.showTransactionHistory();
+				break;
+			case 6:
 				System.out.println("Logging out...");
 				return;
 			default:
